@@ -1,0 +1,134 @@
+div.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body{
+    background-color: brown;
+}
+
+.form-container{ 
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px;
+}
+.form-header{
+    margin-left: 20px;
+}
+form{
+    margin-left: 20px;
+}
+
+input[type = email],input[type = password] { 
+    width: 90%;
+    height: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+
+input[type = email]:focus, input[type = password]:focus{
+    border-bottom: 2px solid black;
+}
+
+form > h3{
+    text-align: center;
+    text-decoration: solid;
+    font-size: small;
+    font-family: cursive;
+    margin-bottom: 0px;
+    margin-bottom: 5%;
+}
+
+div.form-container > .form-header > h1{
+    font-family: cursive;
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
+
+input::placeholder{
+    margin-bottom: 10px;
+}
+
+div.form-footer{
+    display: flex;
+    justify-content: center;    
+    margin-bottom: 5%;
+}
+
+input[type = submit]{
+    height: 40px;
+    width: 80px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+}
+
+input[type = submit]:hover{
+    background-color: white;
+    color: green;
+    border: 1px solid black;
+}
+
+
+
+@media (min-width: 319px) and (max-width: 424px) {
+    .form-container{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 90%;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px;
+    }
+  }
+
+  @media (min-width: 425px) and (max-width: 769px) {
+    .form-container{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 70%;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px;
+    }
+  }
+
+  @media (min-width: 770px) {
+    .form-container{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width:40%;
+        border-radius:10px;
+        box-shadow:10px 10px 10px;
+    }
+  }
+
+  .input-div{
+    margin-bottom: 10%;
+  }
+
+  .error{
+    margin-top: 2px;
+    color: red;
+    display: none;
+    font-family: cursive;
+  }
+
+  a{
+    color: brown;
+  }
+
+  a:hover{
+    color: blueviolet;
+  }
